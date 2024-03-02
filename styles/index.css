@@ -74,13 +74,21 @@ section div{
 
 section div>div{
     margin: 10px;
+    box-shadow: 0 2px 5px grey;
     background-color: white;
     gap: 20px;
     flex-grow: 1;
-    min-width: 300px;
-    max-width: 90%;
+    width: 200px;
+    min-width: 250px;
+    max-width: 70%;
     min-height: 400px;
     border-radius: 10px;
+}
+
+section div div p{
+    color:grey;
+    max-width: 90%;
+    text-align: center;
 }
 
 footer{
@@ -106,4 +114,9 @@ footer ul li{
     margin: 15px 0;
     font-size: 20px;
     text-align: left;
+}
+
+.explore{
+    background-image: url('/images/Screenshot-2023-07-19-075110.png');
+    background-size: cover;
 }

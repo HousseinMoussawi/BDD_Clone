@@ -1,0 +1,12 @@
+.bg-primary{
+    background-color: white;
+}
+.bg-secondary{
+    background-color: rgb(211, 207, 207);
+}
+.txt-primary{
+    color: white;
+}
+.txt-secondary{
+    color: black;
+}

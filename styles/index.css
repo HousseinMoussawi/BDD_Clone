@@ -12,6 +12,7 @@ header{
 
 nav{
     position: fixed;
+    z-index: 1;
     width: 100%;
     height: 80px;
     gap: 20px;
@@ -76,11 +77,6 @@ section{
     background-color: rgb(211, 207, 207);
 }
 
-section div{
-    gap: 10px;
-    margin-top:40px ;
-
-}
 
 .foundations div>div{
     margin: 10px;
@@ -196,6 +192,7 @@ footer ul li{
 }
 
 .preferred div{
+    flex-wrap: wrap;
     gap:70px
 }
 
@@ -203,3 +200,81 @@ footer ul li{
     text-align: center;
 }
 
+.trending main{
+    width: 100%;
+    background-color: white;
+    gap: 20px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scrollbar-color: grey;
+    scrollbar-width: thin;
+}
+
+.trending main div{
+    margin: 20px;
+    min-width: 500px;
+    max-width: 90%;
+    flex-grow: 1;
+    justify-content: center;
+
+}
+
+.trending main div img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.trending button{
+    background-color: rgb(39, 126, 255);
+    color: white;
+    border-radius: 20px;
+    height: 30px;
+    width:150px;
+    border:transparent;
+    margin-top: 20px;
+}
+
+.trending button:hover{
+    cursor: pointer;
+}
+
+.trending h2{
+    border:0.5px solid rgb(219, 212, 212);
+}
+
+.trending p{
+    border:0.5px solid rgb(219, 212, 212);
+    color: grey;
+}
+
+.testimonials>div{
+    position: relative;
+    background-color: white ;
+    width: 100%;
+    height: 500px;
+}
+
+.testimonials>div>img{
+    width: 500px;
+    height: 300px;
+}
+
+.testimonials>div>label{
+    width:500px;
+    height:300px;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    display: none;
+    z-index:1;
+    transition: 0.2s;
+}
+
+#img:hover ~ #label{
+    display: flex;
+}
+
+#label:hover{
+    display: flex;
+}

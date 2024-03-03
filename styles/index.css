@@ -14,23 +14,25 @@ nav{
     position: fixed;
     z-index: 1;
     width: 100%;
-    height: 80px;
+    height: 100px;
     gap: 20px;
 }
 
 nav ul{
+    height: 100%;
+    flex-wrap: wrap;
+    width: 100%;
     list-style: none;
-    gap: 30px;
+    gap: 10px;
 }
 
 nav ul img{
+    top: 10px;
     width:70px;
     left: 10px;
 }
 
 nav ul li{
-    display: inline;
-    font-size: 15px;
     color: white;
 }
 
@@ -248,6 +250,11 @@ footer ul li{
     color: grey;
 }
 
+.testimonials h1{
+    width: 100%;
+    font-size: 26px;
+}
+
 .testimonials>div{
     position: relative;
     background-color: white ;
@@ -277,4 +284,13 @@ footer ul li{
 
 #label:hover{
     display: flex;
+}
+
+footer li img{
+    width: 150px;
+    height: 50px;
+}
+
+span{
+    color: rgb(39, 126, 255);
 }

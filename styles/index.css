@@ -180,5 +180,14 @@ footer ul li{
     height: 80px;
 }
 
+.preferred{
+    background-color: grey;
+    opacity: 0.7;  
+}
+
+.preferred div{
+    gap:70px
+}
+
 
 
